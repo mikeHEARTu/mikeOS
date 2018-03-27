@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body
+{
+	color:white;
+	background: black;
+	text-transform: uppercase;
+	font-family: Lato, Arial, Helvetica, sans-serif;
+}
+.desktopBG
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1920px;
+	height: 1080px;
+	background: purple;
+	background-image:url(../img/heather-emond-313088-unsplash.jpg);
+	background-size: cover;
+	background-position: center center;
+	animation-name:desktopFadeIn;
+    animation-duration:1s;
+}
+.desktopTopBar
+{
+	width: 1910;
+	height: 23px;
+	padding: 0 5px;
+	background: black;
+	background: rgba(0, 0, 0, 0.35);
+	color: white;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 16px;
+}
+.topBarRight
+{
+	float: right;
+}
+.topBarTwitter
+{
+	display: inline-block;
+	height: 11px;
+	width: 13px;
+	margin: 0 5px;
+	background-image:url(../img/twitter-logo.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+}
+.topBarTwitch
+{
+	display: inline-block;
+	height: 11px;
+	width: 11px;
+	margin: 0 5px;
+	background-image:url(../img/twitch-logo.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+}
+.topBarWifi
+{
+	display: inline-block;
+	height: 11px;
+	width: 15px;
+	margin-left: 5px;
+	background-image:url(../img/icons8-wi-fi.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+}
+.topBarAlert
+{
+	display: inline-block;
+	height: 11px;
+	width: 9px;
+	margin: 0 5px;
+	background-image:url(../img/icons8-bell.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+}
+.clockTicker
+{
+	animation-name:clockTickAnimation;
+	animation-duration:1s;
+	animation-iteration-count: infinite;
+}
+.topBarPipe
+{
+	margin: 0 5px;
+}
+
+@keyframes desktopFadeIn
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+
+@keyframes clockTickAnimation
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
