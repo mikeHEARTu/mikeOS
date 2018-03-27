@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike123">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
+	<title>Video games are awful</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			m = checkTime(m);
+			document.getElementById('timeHours').innerHTML = h;
+			document.getElementById('timeMinutes').innerHTML = m;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+	</script>
+
+<body onload="startTime()">
+	<div class="desktopBG">
+		<div class="desktopTopBar">
+			<span class="topBarRight">
+				<div class="topBarTwitter"></div>
+				Twitter.com/mikeHEARTu
+				<div class="topBarTwitch"></div>
+				Twitch.tv/aznmike123
+				<div class="topBarWifi"></div>
+				<div class="topBarAlert"></div>
+				<span id="timeHours"></span><span class="clockTicker">:</span><span id="timeMinutes"></span>
+			</span>
+			mikeOS
+			<span class="topBarPipe">|</span>
+			Thanks for watching!
+		</div>
+
+		<div class="offlineContainer">
+			<div class="offlineWindow">
+				<div class="windowTop">
+					Stream Shutting Down!
+				</div>
+				<div class="offlineContent">
+					<div class="offlineBold">
+						The stream is going offline now!
+					</div>
+					Thanks so much for watching. Follow me on social media for updates!
+					<br>
+					<span class="bold">@mikeHEARTu</span> on most things :D
+
+					<div class="offlineButtonContainer">
+						<div class="offlineButton buttonTwitter">Twitter</div>
+						<div class="offlineButton buttonInstagram">Instagram</div>
+						<div class="offlineButton buttonDribbble">Dribbble</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

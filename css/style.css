@@ -294,6 +294,78 @@ body
 	animation-name:preshowTextin;
 	animation-duration:1s;
 }
+.offlineContainer
+{
+	width: 1920px;
+	height: 1057px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.offlineWindow
+{
+	background: #e3e3e3;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.offlineContent
+{
+	width: auto;
+	font-size:18px;
+	font-style:italic;
+	color:#363636;
+	padding: 12px 24px;
+}
+.offlineBold
+{
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+.offlineButtonContainer
+{
+	width: 100%;
+	margin-top: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.offlineButton
+{
+	padding: 5px 10px;
+	border-radius: 4px;
+	color:white;
+	background: rgba(0, 0, 0, 0.25);
+	margin-left:10px;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bolder;
+}
+.buttonTwitter
+{
+	background: #1da1f2;
+	animation-name:twitterButtonPulse;
+	animation-duration:2s;
+	animation-iteration-count: infinite;
+}
+.buttonInstagram
+{
+	background: #fd1d1d;
+	animation-name:instagramButtonPulse;
+	animation-duration:2s;
+	animation-iteration-count: infinite;
+}
+.buttonDribbble
+{
+	background: #ea4c89;
+	animation-name:dribbbleButtonPulse;
+	animation-duration:2s;
+	animation-iteration-count: infinite;
+}
+.bold
+{
+	font-weight: bold;
+}
 
 @keyframes desktopFadeIn
 {
@@ -353,5 +425,51 @@ body
 	to
 	{
 		border-right: 2px solid black;
+	}
+}
+
+@keyframes twitterButtonPulse
+{
+    0%
+	{
+		background: #1da1f2;
+	}
+	50%
+	{
+		background: #657786;
+	}
+	100%
+	{
+		background: #1da1f2;
+	}
+}
+@keyframes instagramButtonPulse
+{
+    0%
+	{
+		background: #fd1d1d;
+	}
+	50%
+	{
+		background: #405de6;
+	}
+	100%
+	{
+		background: #fd1d1d;
+	}
+}
+@keyframes dribbbleButtonPulse
+{
+    0%
+	{
+		background: #ea4c89;
+	}
+	50%
+	{
+		background: #00b6e3;
+	}
+	100%
+	{
+		background: #ea4c89;
 	}
 }
