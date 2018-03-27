@@ -10,7 +10,23 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			m = checkTime(m);
+			document.getElementById('timeHours').innerHTML = h;
+			document.getElementById('timeMinutes').innerHTML = m;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+	</script>
+
+<body onload="startTime()">
 	<div class="desktopBG">
 		<div class="desktopTopBar">
 			<span class="topBarRight">
@@ -20,7 +36,7 @@
 				Twitch.tv/aznmike123
 				<div class="topBarWifi"></div>
 				<div class="topBarAlert"></div>
-				12<span class="clockTicker">:</span>34
+				<span id="timeHours"></span><span class="clockTicker">:</span><span id="timeMinutes"></span>
 			</span>
 			mikeOS
 			<span class="topBarPipe">|</span>
