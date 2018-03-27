@@ -14,12 +14,16 @@ body
 	top: 0;
 	width: 1920px;
 	height: 1080px;
-	background: purple;
+	background: black;
 	background-image:url(../img/heather-emond-313088-unsplash.jpg);
 	background-size: cover;
 	background-position: center center;
-	animation-name:desktopFadeIn;
-    animation-duration:1s;
+	/*animation-name:desktopFadeIn;
+	animation-duration:1s;*/
+}
+.desktopBGBlur
+{
+	background-image:url(../img/heather-emond-313088-unsplash-blur.jpg);
 }
 .desktopTopBar
 {
@@ -31,6 +35,10 @@ body
 	color: white;
 	color: rgba(255, 255, 255, 0.9);
 	font-size: 16px;
+}
+.desktopTopBarPrelive
+{
+	background: rgba(0, 0, 0, 0);
 }
 .topBarRight
 {
@@ -94,6 +102,62 @@ body
 {
 	margin: 0 5px;
 }
+.loginBounds
+{
+	width: 1920px;
+	height: 1057px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.loginBox
+{
+	height: auto;
+}
+.loginUserGroup
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.loginUser
+{
+	margin: 0 50px;
+}
+.loginNotLogged
+{
+	opacity: 0.25;
+}
+.loginPicture
+{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background: white;
+	background-size: cover;
+	background-position: center center;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+.loginUsername
+{
+	font-size: 36px;
+	font-weight: lighter;
+	margin-bottom: 25px;
+}
+.loginText
+{
+	font-size: 24px;
+	font-weight: lighter;
+	font-style: italic;
+}
+.loginTick
+{
+	animation-name:loginTickAnimation;
+	animation-duration:2s;
+	animation-iteration-count: infinite;
+}
 
 @keyframes desktopFadeIn
 {
@@ -108,6 +172,18 @@ body
 }
 
 @keyframes clockTickAnimation
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+
+@keyframes loginTickAnimation
 {
     from
 	{
