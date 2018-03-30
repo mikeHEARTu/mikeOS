@@ -169,7 +169,6 @@ body
 }
 .nowPlayingPlayer
 {
-	position: absolute;
 	object-fit: cover;
 }
 .desktopTextEditor
@@ -178,7 +177,7 @@ body
 	height: 400px;
 	width: 600px;
 	left:50px;
-	top:100px;
+	top:75px;
 	z-index: 100;
 	border-radius: 5px;
 	overflow: hidden;
@@ -376,12 +375,27 @@ body
 	height: 353px;
 	width: 616px;
 	left:15px;
-	bottom:150px;
-	z-index: 100;
+	bottom:300px;
+	z-index: 500;
 	border-radius: 5px;
 	overflow: hidden;
 	background: white;
 	background-image:url(../img/humble-promo-spec-ops.png);
+	background-size: cover;
+	background-position: center center;
+}
+.pretzelPromo
+{
+	position: absolute;
+	height: 320px;
+	width: 320px;
+	left:100px;
+	bottom:15px;
+	z-index: 500;
+	border-radius: 5px;
+	overflow: hidden;
+	background: white;
+	background-image:url(../img/pretzel-promo.png);
 	background-size: cover;
 	background-position: center center;
 }
