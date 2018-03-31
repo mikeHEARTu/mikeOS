@@ -34,22 +34,38 @@ body
 	background: rgba(0, 0, 0, 0.35);
 	color: white;
 	color: rgba(255, 255, 255, 0.9);
-	font-size: 16px;
+	font-size: 17px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .desktopTopBarPrelive
 {
 	background: rgba(0, 0, 0, 0);
 }
-.topBarRight
+.topBarRight 
 {
-	float: right;
+	display: flex;
+	align-items: center;
+}
+.topBarLeft 
+{
+	display: flex;
+	align-items: center;
+}
+.topBarText
+{
+	
+}
+.topBarInactive
+{
+	display: none;
 }
 .topBarTwitter
 {
-	display: inline-block;
-	height: 11px;
-	width: 13px;
-	margin: 0 5px;
+	height: 23px;
+	width: 12px;
+	margin: 0 7px;
 	background-image:url(../img/twitter-logo.png);
 	background-size: contain;
 	background-position: center center;
@@ -58,11 +74,21 @@ body
 }
 .topBarTwitch
 {
-	display: inline-block;
-	height: 11px;
-	width: 11px;
-	margin: 0 5px;
+	height: 23px;
+	width: 12px;
+	margin: 0 7px;
 	background-image:url(../img/twitch-logo.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+}
+.topBarMixer
+{
+	height: 23px;
+	width: 12px;
+	margin: 0 7px;
+	background-image:url(../img/mixer-logo.png);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -70,10 +96,9 @@ body
 }
 .topBarWifi
 {
-	display: inline-block;
-	height: 11px;
+	height: 23px;
 	width: 15px;
-	margin-left: 5px;
+	margin-left: 7px;
 	background-image:url(../img/icons8-wi-fi.png);
 	background-size: contain;
 	background-position: center center;
@@ -83,9 +108,9 @@ body
 .topBarAlert
 {
 	display: inline-block;
-	height: 11px;
-	width: 9px;
-	margin: 0 5px;
+	height: 23px;
+	width: 11px;
+	margin: 0 7px;
 	background-image:url(../img/icons8-bell.png);
 	background-size: contain;
 	background-position: center center;
@@ -100,7 +125,7 @@ body
 }
 .topBarPipe
 {
-	margin: 0 5px;
+	margin: 0 7px;
 }
 
 .desktopNowPlayingVideo
@@ -293,9 +318,13 @@ body
 {
 	font-size:234px;
 	font-weight: bold;
-	margin-top:-63px;
+
 	animation-name:preshowTextin;
 	animation-duration:1s;
+}
+.preshowSubText
+{
+	
 }
 .offlineContainer
 {
