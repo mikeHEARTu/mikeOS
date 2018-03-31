@@ -310,13 +310,13 @@ body
 .preshowText
 {
 	font-size:48px;
-	font-style: italic;
+
 	font-weight: lighter
 }
 
 .preshowMainText
 {
-	font-size:234px;
+	font-size:120px;
 	font-weight: bold;
 
 	animation-name:preshowTextin;
