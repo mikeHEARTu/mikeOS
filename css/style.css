@@ -404,12 +404,12 @@ body
 	height: 353px;
 	width: 616px;
 	left:15px;
-	bottom:300px;
+	bottom:320px;
 	z-index: 500;
 	border-radius: 5px;
 	overflow: hidden;
 	background: white;
-	background-image:url(../img/humble-promo-spec-ops.png);
+	background-image:url(../img/humble-promo-monthly-march-2018.png);
 	background-size: cover;
 	background-position: center center;
 }
