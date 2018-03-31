@@ -469,7 +469,8 @@ body
 {
     from
 	{
-		transform: translateX(100px);
+		text-shadow: 0 1px 5px rgba(0, 0, 0, 1);
+		transform: translatey(20px);
 		filter:opacity(0);
 	}
 	to
