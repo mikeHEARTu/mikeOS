@@ -151,8 +151,8 @@ body
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.75);
-	/*background: black;
-	background-image:url(../img/john-sting-112628.jpg);*/
+	background: black;
+	background-image:url(../img/division-screenshot.jpg);
 	background-size: cover;
 	background-position: center center;
 }
