@@ -450,15 +450,18 @@ body
 	overflow: hidden;
 	white-space: nowrap;
 	display: inline-block;
-	background: #6441A4;
-	background:rgba(100, 65, 164, 0.5);
-	text-shadow: 0 0px 5px rgba(0, 0, 0, 1);
+	background: white;
+	border-right: 7px solid #6441A4;
+	color: black;
 	margin: 10px;
-	padding: 5px 25px;
+	padding: 5px 20px;
 	animation-name:onscreenIn;
 	animation-duration:1s;
-	border-radius:5px;
-	/* box-shadow: 2px 2px 5px rgba(0,0,0,0.5); */
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.35);
+}
+.onscreenPS4
+{
+	border-right: 7px solid #003087;
 }
 
 @keyframes desktopFadeIn
