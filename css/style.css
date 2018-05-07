@@ -467,7 +467,10 @@ body
 {
 	border-right: 7px solid #00adee;
 }
-
+.oncscreenMixer
+{
+	border-right: 7px solid #1fbaed;
+}
 @keyframes desktopFadeIn
 {
     from
