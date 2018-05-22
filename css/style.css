@@ -134,7 +134,7 @@ body
 	height: 720px;
 	width: 1280px;
 	right:50px;
-	bottom:20px;
+	bottom:120px;
 	z-index: 1000;
 	border-radius: 5px;
 	overflow: hidden;
@@ -146,7 +146,7 @@ body
 	height: 720px;
 	width: 1280px;
 	right:50px;
-	bottom:20px;
+	bottom:120px;
 	z-index: 1001;
 	border-radius: 5px;
 	overflow: hidden;
@@ -170,7 +170,7 @@ body
 }
 .windowTopInactive
 {
-	background: rgba(54, 54, 54, 0.75);
+	background: rgba(54, 54, 54, 0.65);
 }
 .nowPlayingContent
 {
@@ -408,7 +408,7 @@ body
 	height: 308px;
 	width: 616px;
 	left:15px;
-	top:310px;
+	top:260px;
 	z-index: 500;
 	border-radius: 5px;
 	overflow: hidden;
@@ -423,8 +423,8 @@ body
 	height: 308px;
 	width: 616px;
 	left:35px;
-	bottom:50px;
-	z-index: 2000;
+	bottom:220px;
+	z-index: 600;
 	border-radius: 5px;
 	overflow: hidden;
 	background: white;
@@ -438,9 +438,9 @@ body
 	position: absolute;
 	height: 320px;
 	width: 320px;
-	left:640px;
-	top:35px;
-	z-index: 100;
+	left:560px;
+	bottom:15px;
+	z-index: 2000;
 	border-radius: 5px;
 	overflow: hidden;
 	background: white;
