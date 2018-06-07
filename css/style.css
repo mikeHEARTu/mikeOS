@@ -53,10 +53,6 @@ body
 	display: flex;
 	align-items: center;
 }
-.topBarText
-{
-	
-}
 .topBarInactive
 {
 	display: none;
@@ -325,10 +321,6 @@ body
 
 	animation-name:preshowTextin;
 	animation-duration:1s;
-}
-.preshowSubText
-{
-	
 }
 .offlineContainer
 {
