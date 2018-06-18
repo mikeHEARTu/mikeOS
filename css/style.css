@@ -483,6 +483,10 @@ body
 {
 	border-right: 7px solid #1fbaed;
 }
+.oncscreenXbox
+{
+	border-right: 7px solid #52b043;
+}
 .chatbox
 {
 	position: absolute;
