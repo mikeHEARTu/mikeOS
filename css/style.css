@@ -509,14 +509,15 @@ body
 	background-position: center center;
 	color:white;
 	border-left: 2vw solid #6441A4;
-	box-shadow: 0 1vw 2vw rgba(0, 0, 0, 1);
+	box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 1);
 	text-shadow: 0 1vw 1vw rgba(0, 0, 0, 1);
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align:center;
 	font-size: 6vw;
-	font-weight: bolder;
+	font-weight: lighter;
 	animation-name:chatboxIn;
 	animation-duration:1s;
 }
@@ -525,6 +526,15 @@ body
 	animation-name:chatboxIn;
 	animation-duration:1s;
 	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+.chatboxSubtitle
+{
+	font-size: 3vw;
+	font-weight: bolder;
+	animation-name:chatboxIn;
+	animation-duration:1s;
+	animation-delay: 1s;
 	animation-fill-mode: backwards;
 }
 @keyframes desktopFadeIn
