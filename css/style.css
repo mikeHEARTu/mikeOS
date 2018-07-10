@@ -411,6 +411,7 @@ body
 }
 .humbleBundle
 {
+	display: none;
 	position: absolute;
 	height: 308px;
 	width: 616px;
