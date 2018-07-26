@@ -400,7 +400,7 @@ body
 	height: 308px;
 	width: 616px;
 	left:15px;
-	top:260px;
+	bottom:380px;
 	z-index: 500;
 	border-radius: 5px;
 	overflow: hidden;
@@ -409,30 +409,13 @@ body
 	background-size: cover;
 	background-position: center center;
 }
-.humbleBundle
-{
-	display: none;
-	position: absolute;
-	height: 308px;
-	width: 616px;
-	left:35px;
-	bottom:215px;
-	z-index: 600;
-	border-radius: 5px;
-	overflow: hidden;
-	background: white;
-	background-image:url(../img/humble-arma-bundle.png);
-	background-size: cover;
-	background-position: center center;
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.75);
-}
 .pretzelPromo
 {
 	position: absolute;
 	height: 320px;
 	width: 320px;
-	left:560px;
-	bottom:15px;
+	left:130px;
+	bottom:65px;
 	z-index: 2000;
 	border-radius: 5px;
 	overflow: hidden;
